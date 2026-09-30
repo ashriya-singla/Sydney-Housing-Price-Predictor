@@ -1,0 +1,73 @@
+{
+  "model_name": "Gradient Boosting",
+  "feature_set": "A_raw",
+  "n_training_rows": 120,
+  "ref_date": "2026-04-21",
+  "latest_sale_date": "2026-09-30",
+  "inputs_used": [
+    "bathrooms",
+    "bedrooms",
+    "car_spaces",
+    "land_size_sqm",
+    "property_type",
+    "sale_date",
+    "suburb"
+  ],
+  "suburbs": [
+    "Blacktown",
+    "Bondi",
+    "Parramatta"
+  ],
+  "property_types": [
+    "House",
+    "Other",
+    "Townhouse",
+    "Unit"
+  ],
+  "sale_methods": [
+    "Auction",
+    "Other",
+    "Private Treaty"
+  ],
+  "ranges": {
+    "bedrooms": [
+      0.0,
+      7.0
+    ],
+    "bathrooms": [
+      1.0,
+      4.0
+    ],
+    "car_spaces": [
+      0.0,
+      6.0
+    ],
+    "land_size_sqm": [
+      63.0,
+      739.8
+    ],
+    "building_size_sqm": [
+      68.7,
+      217.0
+    ],
+    "year_built": [
+      1910.0,
+      2023.0
+    ]
+  },
+  "price_range": [
+    320000.0,
+    5416000.0
+  ],
+  "cv_mae": 187294.39772391945,
+  "cv_rmse": 311719.4181728399,
+  "cv_mape_pct": 14.02925404774237,
+  "cv_r2": 0.877565327295412,
+  "ratio_low": 0.8257127764402179,
+  "ratio_high": 1.2431007265660785,
+  "median_price_by_suburb": {
+    "Blacktown": 765000.0,
+    "Bondi": 1960000.0,
+    "Parramatta": 605000.0
+  }
+}
